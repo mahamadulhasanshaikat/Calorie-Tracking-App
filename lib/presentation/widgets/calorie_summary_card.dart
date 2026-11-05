@@ -7,12 +7,12 @@ class CalorieSummaryCard extends StatelessWidget {
   final IconData icon;
 
   const CalorieSummaryCard({
-    Key? key,
+    super.key,
     required this.title,
     required this.value,
     required this.color,
     required this.icon,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -25,18 +25,18 @@ class CalorieSummaryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: color.withOpacity(0.15),
+              color: color.withValues(alpha: 0.15),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
           ],
-          border: Border.all(color: color.withOpacity(0.3), width: 1),
+          border: Border.all(color: color.withValues(alpha: 0.3), width: 1),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             CircleAvatar(
-              backgroundColor: color.withOpacity(0.1),
+              backgroundColor: color.withValues(alpha: 0.1),
               radius: 16,
               child: Icon(icon, size: 18, color: color),
             ),

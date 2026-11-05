@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.restaurant_menu, size: 64, color: Colors.grey.withOpacity(0.5)),
+                              Icon(Icons.restaurant_menu, size: 64, color: Colors.grey.withValues(alpha: 0.5)),
                               const SizedBox(height: 16),
                               const Text(
                                 "No food added yet!",
@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(16),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Colors.black.withOpacity(0.03),
+                                    color: Colors.black.withValues(alpha: 0.03),
                                     blurRadius: 8,
                                     offset: const Offset(0, 2),
                                   ),
@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                               child: ListTile(
                                 contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                                 leading: CircleAvatar(
-                                  backgroundColor: Colors.teal.withOpacity(0.1),
+                                  backgroundColor: Colors.teal.withValues(alpha: 0.1),
                                   child: const Icon(Icons.lunch_dining, color: Colors.teal),
                                 ),
                                 title: Text(

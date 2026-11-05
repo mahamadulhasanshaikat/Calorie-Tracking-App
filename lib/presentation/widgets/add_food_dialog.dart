@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import '../providers/calorie_provider.dart';
 
 class AddFoodDialog extends StatefulWidget {
-  const AddFoodDialog({Key? key}) : super(key: key);
+  const AddFoodDialog({super.key});
 
   @override
   State<AddFoodDialog> createState() => _AddFoodDialogState();
